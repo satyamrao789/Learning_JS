@@ -71,5 +71,12 @@ function Approved() {
 //phle loadingData print hua , then fir 2 seconds baad promise return kr diya ki haan kaam ho gya, then uske 2 seconds baad Collecting data print hua, then uske 2 seconds baad Approving Data, then uske 2 seconds baad collecting data
 loadingData().then(collectingData).then(ApprovingData).then(Approved);
 
+//insted of using then, we can use async await
 
+function Execute() {
+    await loadingData();
+    await collectingData();
+    await ApprovingData();
+    await Approved();
+}
 
