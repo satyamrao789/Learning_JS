@@ -47,7 +47,8 @@ function collectingData() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             console.log("2.Collecting Data");
-            resolve(); 
+            // resolve(); 
+            reject("Data couldn't be collected, Check after some time");
         },2000)
     })     
 }
@@ -80,4 +81,8 @@ async function Execute() {
     await Approved();
 }
 
-Execute();
+// Execute();
+
+// async always returns a Promise
+
+Execute().then().catch(err => console.error(err));
