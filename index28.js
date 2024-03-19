@@ -12,3 +12,5 @@ function divide(a,b) {
     
 }
 console.log(divide(10,0));
+
+//undefined isliye aa rha kyunki console.log 2 times ho gya
