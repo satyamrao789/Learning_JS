@@ -13,3 +13,13 @@ let numbers = num.reduce( (previous,current) => {
 })
 
 console.log(numbers);
+
+/*By default, if you don't provide an initial value for the accumulator, the reduce() function will use the first element of the array as the initial accumulator and start from the second element. However, you can explicitly specify an initial value as the second argument to reduce().*/
+
+let digit = [2,4,5,7,8,9,10];
+
+let answer = digit.reduce( (previous,current) => {
+    return previous + current;
+},100)
+
+console.log(answer);
