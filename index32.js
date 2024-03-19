@@ -6,3 +6,10 @@ fetch('demo.txt').then((response) => {
 }).catch((err) => {
     console.error(err);
 })
+
+//Fetching FAKE API
+fetch('https://jsonplaceholder.typicode.com/posts').then((response) =>{
+    return response.json();
+}).then(data => {
+    console.log(data);
+})
