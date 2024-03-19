@@ -27,3 +27,8 @@ let numbers  = num.map((val) => {
 })
 
 console.log(numbers);
+
+
+let numbers1  = num.map((val) =>  val + 50);
+
+console.log(numbers1);
