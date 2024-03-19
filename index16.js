@@ -19,3 +19,13 @@ console.log(obj2);
 //now obj2.is having reference of obj1
 //first searched fname & mname inside obj2, it was not found, so it went to its reference
 console.log(obj2.fname +" "+obj2.mname);
+
+
+var obj3 = {
+    fname : "Robert",
+    mname : "Downey"
+}
+console.log(obj3);
+//obj4 will be created as empty array and will be storing Prototype of obj4
+var obj4 = Object.create(obj3); 
+console.log(obj4);
