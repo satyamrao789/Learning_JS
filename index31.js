@@ -6,9 +6,9 @@
 
 3.Accumulation: Inside the reducer function, you define the logic for how to combine the current element (currentValue) with the current accumulated value (acc). The return value of the reducer function becomes the new accumulator value for the next iteration.*/
 
-let num = [2,4,5,7,8,9,10];
+let num = [2, 4, 5, 7, 8, 9, 10];
 
-let numbers = num.reduce( (previous,current) => {
+let numbers = num.reduce((previous, current) => {
     return previous + current;
 })
 
@@ -16,10 +16,19 @@ console.log(numbers);
 
 /*By default, if you don't provide an initial value for the accumulator, the reduce() function will use the first element of the array as the initial accumulator and start from the second element. However, you can explicitly specify an initial value as the second argument to reduce().*/
 
-let digit = [2,4,5,7,8,9,10];
+let digit = [2, 4, 5, 7, 8, 9, 10];
 
-let answer = digit.reduce( (previous,current) => {
+let answer = digit.reduce((previous, current) => {
     return previous + current;
-},100)
+}, 100)
 
 console.log(answer);
+
+// Qn - Find the maximum Element
+
+let yourArray = [22, 6, 82, 5, 7, 235];
+
+let max = yourArray.reduce((previous, current) =>
+    previous > current ? previous : current
+)
+console.log(max);
