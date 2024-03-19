@@ -29,3 +29,10 @@ console.log(obj3);
 //obj4 will be created as empty array and will be storing Prototype of obj4
 var obj4 = Object.create(obj3); 
 console.log(obj4);
+
+console.log(obj4.fname + " " + obj4.mname);
+obj4.lname = "Junior"
+
+console.log(obj4);
+
+console.log(obj4.fname + " "+obj4.mname+" "+obj4.lname);
