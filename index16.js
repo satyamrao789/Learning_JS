@@ -13,5 +13,9 @@ console.log(obj1.mname);
 console.log(obj2);
 console.log(obj2.lname);
 
-// obj2.__proto__ = obj1;
-// console.log(obj2);
+// __proto__ means [[Prototype]] : Object
+obj2.__proto__ = obj1;
+console.log(obj2);
+//now obj2.is having reference of obj1
+//first searched fname & mname inside obj2, it was not found, so it went to its reference
+console.log(obj2.fname +" "+obj2.mname);
