@@ -12,8 +12,10 @@ num.map((value) => {
 
 console.log(num);
 
-// let numbers  = num.map((val) => {
-//     val = val + 50;
-// })
 
-// console.log(numbers);
+/*Since the callback function doesn't explicitly return anything (it only modifies the local val), the new array gets filled with undefined (the default return value when no return statement is present).*/
+let numbers  = num.map((val) => {
+    val = val + 50;
+})
+
+console.log(numbers);
